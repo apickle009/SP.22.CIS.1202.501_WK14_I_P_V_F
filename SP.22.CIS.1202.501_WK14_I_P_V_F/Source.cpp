@@ -14,6 +14,7 @@ int main() {
 
 	string vehicleMan;
 	string carMan;
+	string truckMan;
 	int year; 
 	int doors;
 	int towCapa;
@@ -41,7 +42,7 @@ int main() {
 
 	// Collecting and displaying Car Details now
 
-	cout << "\nCar" << "\n--------------------------------------------";
+	cout << "\nCar:" << "\n--------------------------------------------";
 	cout << "\nPlease enter the make of your Car: ";
 	getline(cin, carMan);
 	urCar.setManufacturer(carMan);
@@ -53,14 +54,29 @@ int main() {
 	cout << "\nPlease provide the number of doors that your " << carMan << " has: ";
 	cin >> doors;
 	urCar.setDoors(doors);
-	cout << endl << endl;
+	cout << "\n--------------------------------------------";
 
 	urCar.displayInfo(); 
 	cin.ignore();
 
+	// Collecting and displaying Truck Details now
 
+	cout << "\nTruck:" << "\n--------------------------------------------";
+	cout << "\nPlease enter the make of your Truck: ";
+	getline(cin, truckMan);
+	urTruck.setManufacturer(truckMan);
 
+	cout << "\nNow, Please enter the year your " << truckMan << " was built: ";
+	cin >> year;
+	urTruck.setYearBuilt(year);
 
+	cout << "\nPlease provide the towing capacity that your " << truckMan << " has: ";
+	cin >> towCapa;
+	urTruck.setTowingCapa(towCapa);
+	cout << "\n--------------------------------------------";
+
+	urTruck.displayInfo();
+	cin.ignore();
 
 
 
