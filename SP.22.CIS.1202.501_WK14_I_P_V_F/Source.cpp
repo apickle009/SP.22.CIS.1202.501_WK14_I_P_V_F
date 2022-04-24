@@ -35,8 +35,6 @@ int main() {
 	cin >> year;
 	urVehicle.setYearBuilt(year);
 
-	cout << endl <<  endl; 
-
 	urVehicle.displayInfo(); 
 	cin.ignore(); 
 
