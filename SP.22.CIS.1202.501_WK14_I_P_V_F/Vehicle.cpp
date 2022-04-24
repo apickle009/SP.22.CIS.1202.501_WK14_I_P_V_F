@@ -33,7 +33,7 @@ string Vehicle::getManufacturer() {
 
 void Vehicle::displayInfo() {
 
-	cout << "\nThe Vehicle Information: ";
+	cout << "\nVehicle Information: ";
 	cout << "\nMake: " << manufacturer; 
 	cout << "\nYear Assembled: " << yearBuilt << endl; 
 	
