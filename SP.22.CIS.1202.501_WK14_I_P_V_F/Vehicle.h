@@ -4,8 +4,8 @@
 
 #ifndef VEHICLE_H
 #define VEHICLE_H
-#include <string>;
-#include <iostream>;
+#include <string>
+#include <iostream>
 
 using namespace std; 
 
@@ -15,13 +15,12 @@ private:
 	int yearBuilt;
 
 public:
-	Vehicle(string manufacturer, int yearBuilt) {
+	Vehicle() {
 
 		manufacturer = " ";
 		yearBuilt = 0; 
-
 	}
-	;
+	
 
 	string getManufacturer(); 
 	int getYearBuilt();
