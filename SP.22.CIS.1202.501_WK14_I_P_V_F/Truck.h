@@ -2,27 +2,27 @@
 //SP.22.CIS.1202.501 
 //4.23.22
 
-#ifndef CAR_H
-#define CAR_H
+#ifndef TRUCK_H
+#define TRUCK_H
 #include <string>
 #include <iostream>
 #include "Vehicle.h"
 
 using namespace std;
 
-class Car : public Vehicle {
+class Truck : public Vehicle {
 private:
-	int numDoors;
+	int towCap;
 
 public:
-	Car() {
+	Truck() {
 
-		numDoors = 0;
+		towCap = 0;
 
 	};
 
-	int getDoors();
-	void setDoors(int);
+	int getTowingCapa();
+	void setTowingCapa(int);
 	void displayInfo();
 
 };
