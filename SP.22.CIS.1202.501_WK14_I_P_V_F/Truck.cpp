@@ -24,6 +24,6 @@ void Truck::setTowingCapa(int tC) {
 void Truck::displayInfo() {
 
 	Vehicle::displayInfo();
-	cout << "\nTow Capacity: " << towCap;
+	cout << "Tow Capacity: " << towCap << endl << endl;
 
 }

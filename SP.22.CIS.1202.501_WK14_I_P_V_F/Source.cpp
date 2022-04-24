@@ -31,7 +31,7 @@ int main() {
 	getline(cin, vehicleMan);
 	urVehicle.setManufacturer(vehicleMan);
 
-	cout << "\nNow, Please enter the year your " << vehicleMan << " was built: ";
+	cout << "Please enter the year your " << vehicleMan << " was built: ";
 	cin >> year;
 	urVehicle.setYearBuilt(year);
 
@@ -47,14 +47,14 @@ int main() {
 	getline(cin, carMan);
 	urCar.setManufacturer(carMan);
 	
-	cout << "\nNow, Please enter the year your " << carMan << " was built: ";
+	cout << "Please enter the year your " << carMan << " was built: ";
 	cin >> year;
 	urCar.setYearBuilt(year);
 
-	cout << "\nPlease provide the number of doors that your " << carMan << " has: ";
+	cout << "Please provide the number of doors that your " << carMan << " has: ";
 	cin >> doors;
 	urCar.setDoors(doors);
-	cout << "\n--------------------------------------------";
+	cout << "--------------------------------------------";
 
 	urCar.displayInfo(); 
 	cin.ignore();
@@ -66,20 +66,17 @@ int main() {
 	getline(cin, truckMan);
 	urTruck.setManufacturer(truckMan);
 
-	cout << "\nNow, Please enter the year your " << truckMan << " was built: ";
+	cout << "Now, Please enter the year your " << truckMan << " was built: ";
 	cin >> year;
 	urTruck.setYearBuilt(year);
 
-	cout << "\nPlease provide the towing capacity that your " << truckMan << " has: ";
+	cout << "Please provide the towing capacity that your " << truckMan << " has: ";
 	cin >> towCapa;
 	urTruck.setTowingCapa(towCapa);
 	cout << "\n--------------------------------------------";
 
 	urTruck.displayInfo();
-	cin.ignore();
-
-
-
+	
 	system("pause");
 	return 0; 
 }
