@@ -23,10 +23,10 @@ public:
 	}
 	;
 
-	void getManufacturer(); 
-	void getYearBuilt();
+	string getManufacturer(); 
+	int getYearBuilt();
 	void setManufacturer(string);
-	void setUYearBuilt(int); 
+	void setYearBuilt(int); 
 	void displayInfo();
 
 };
