@@ -15,9 +15,9 @@ private:
 	int numDoors;
 
 public:
-	Car(int doors) {
+	Car() {
 
-		doors = 0;
+		numDoors = 0;
 
 	};
 
