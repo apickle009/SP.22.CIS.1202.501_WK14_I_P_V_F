@@ -31,20 +31,18 @@ int main() {
 	urVehicle.setManufacturer(vehicleMan);
 
 	cout << "\nNow, Please enter the year your " << vehicleMan << " was built: ";
-	cin.ignore();
 	cin >> year;
 	urVehicle.setYearBuilt(year);
 
 	cout << endl <<  endl; 
 
 	urVehicle.displayInfo(); 
+	cin.ignore(); 
 
 	// Collecting and displaying Car Details now
 
-	cout << "\nWelcome back Driver! This time we will need some additional details about your Car" << endl;
-
-	cout << "\nPlease enter the make of your Vehicle: ";
-	cin.ignore();
+	cout << "\nCar" << "\n--------------------------------------------";
+	cout << "\nPlease enter the make of your Car: ";
 	getline(cin, carMan);
 	urCar.setManufacturer(carMan);
 	
@@ -58,6 +56,7 @@ int main() {
 	cout << endl << endl;
 
 	urCar.displayInfo(); 
+	cin.ignore();
 
 
 
